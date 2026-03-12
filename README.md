@@ -74,20 +74,6 @@ VAL_RATIO = 0.1
 
 Tokenization was performed using the HuggingFace SaudiBERT Tokenizer https://huggingface.co/faisalq/SaudiBERT.
 
-**Tokenizer type:**
-
-**AutoTokenizer**
-
-**Special tokens used by the model:**
-
-**[BOS]** beginning of sequence
-
-**[EOS]** end of sequence
-
-**[PAD]** padding token
-
-A wrapper class was implemented to simplify encoding and decoding operations during training and generation.
-
 
 # 
 
@@ -252,4 +238,40 @@ Generated outputs were evaluated using a larger language model acting as an auto
 
   ## Evaluation Results
 
-  
+  ## Average Overall Score
+
+**Overall Model Quality ≈ 2 / 5**
+
+#
+
+## Identified Failure Modes
+
+The evaluation revealed several common issues.
+
+- **Repetition**: The model frequently repeats phrases during generation.
+
+- **Semantic Drift**: Responses sometimes begin correctly but gradually lose context.
+
+- **Weak Poetry Interpretation**: The model sometimes generates generic poetic phrases rather than explaining the verse meaning.
+
+- **Inconsistent Dialect Usage**: Najdi dialect appears in some responses but is not consistently applied.
+
+#
+
+## Limitations
+
+The limitations observed are expected due to:
+
+**- small model size (~41M parameters)**
+
+**- limited fine-tuning dataset**
+
+**- relatively short training duration**
+
+#
+
+# Conclusion
+
+Diwan Najd demonstrates that a **small transformer-based language model** can be trained to generate Arabic text and partially follow instruction-based prompts related to poetry and dialect.
+
+Although the model shows **limitations** in semantic understanding and coherence, the training pipeline successfully enables the model to produce stylistically Arabic outputs and respond to structured prompts.
