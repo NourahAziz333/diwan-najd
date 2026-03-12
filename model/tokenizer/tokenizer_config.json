@@ -1,0 +1,17 @@
+{
+  "backend": "tokenizers",
+  "bos_token": "[BOS]",
+  "clean_up_tokenization_spaces": true,
+  "cls_token": "[CLS]",
+  "do_lower_case": true,
+  "eos_token": "[EOS]",
+  "is_local": false,
+  "keep_accents": false,
+  "mask_token": "[MASK]",
+  "model_max_length": 512,
+  "pad_token": "[PAD]",
+  "remove_space": true,
+  "sep_token": "[SEP]",
+  "tokenizer_class": "TokenizersBackend",
+  "unk_token": "<unk>"
+}
