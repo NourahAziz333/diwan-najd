@@ -1,4 +1,6 @@
 # Diwan Najd: Najdi Poetry Language Model
+
+NoteBook: https://colab.research.google.com/drive/1886QjzvgA4Av-6B0vqpMAXhznCI3rM4-?usp=sharing
 ## Overview
 
 Diwan Najd is a **small Arabic language model** trained to understand and generate responses related to Arabic poetry using the Najdi dialect. The model is trained from scratch using a Transformer-based architecture implemented in PyTorch.
